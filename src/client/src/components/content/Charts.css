@@ -1,0 +1,13 @@
+.charts-container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+  }
+
+  .btn-arrow {
+    margin-right: 5px;
+  }
