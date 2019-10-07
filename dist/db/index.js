@@ -24,15 +24,24 @@ class Data {
 
 
     setParsedData(d) {
+        console.log('set');
         return new Promise(r => { this.parsedData = d; r(); });
     }
 
+    /**
+     * 
+     * @param {Array} d 
+     */
     appendParsedData(d) {
-        return new Promise(r => { this.parsedData = [...d]; r(); });
+        return new Promise(r => { this.parsedData = [...this.parsedData,...d]; r(this.parsedData.length); });
     }
 
+    /**
+     * 
+     * @param {Array} d 
+     */
     appendNotFound(d) { 
-        return new Promise(r => { this.notFound = [...d]; r(); });
+        return new Promise(r => { this.notFound = [...this.notFound,...d]; r(this.parsedData.length); });
     }
 
     getParsedNameList() {

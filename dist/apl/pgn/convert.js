@@ -5,7 +5,7 @@
 
 /**
  * 
- * @param {String} reolution 
+ * @param {String} resolution 
  */
 function getResolution(resolution) {
   if (resolution.indexOf('states') > -1) return 1;
@@ -57,9 +57,9 @@ function execute() {
     let sourceFileName = process.argv[2] || '';
     let destinationFileName = process.argv[3] || '';
     if (sourceFileName == '') 
-      return console.log('Please set source file Example[ node convert.js source.xml destination.json ]');
+      return console.log('Please set source file Example[ node convert.js source.xls destination.json ]');
     if (destinationFileName == '') 
-      return console.log('Please set destination file Example[ node convert.js source.xml destination.json ]');
+      return console.log('Please set destination file Example[ node convert.js source.xls destination.json ]');
     
       console.log('Open source file', process.argv[2]);
 

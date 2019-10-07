@@ -20,3 +20,8 @@ Add const dbm = require('./mongodb'), change module.export and set dbLink in mon
 ## Use
 
 Open folder, select *.trc files and click on PGN at left side of window.
+
+## How append new PGN
+
+* Add new data in xls file dist/apl/pgn/sae_j_1939.xls
+* Convert xls for server `node convert.js sae_j_1939.xls PGN_Data.json`

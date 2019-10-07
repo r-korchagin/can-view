@@ -33,8 +33,9 @@ function parser(content, pgn, fileName) {
                 }
         }
     }
-    db.appendParsedData(parsedData);
-    db.appendNotFound(notFound);
+    db.appendParsedData(parsedData).then(count=> console.log('Parsed Count',count));
+    db.appendNotFound(notFound).then(count=> console.log('Not Found Count',count));
+    console.log('Not Found Unic ID', notFoundUnic);
     fs.unlink(fileName, (err) => {
         if (err) { console.error(err);}
       });
