@@ -11,7 +11,7 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "^4.16.4",
-    "express-fileupload": "^1.1.6-alpha.4",
+    "express-fileupload": "^1.1.9",
     "http-errors": "~1.6.3",
     "mongodb": "^3.3.2",
     "mongoose": "5.7.5",
